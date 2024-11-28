@@ -20,7 +20,7 @@
 
             while (true)
             {
-                Console.WriteLine("Enter product category (or q to quit): ");
+                Console.WriteLine("Enter product category - or q to quit: ");
                 input = Console.ReadLine();
                 if (input.ToLower() == "q")
                 {
@@ -29,7 +29,7 @@
                 category = input; //Assigns the input to new variable
 
 
-                Console.WriteLine("Enter product name (or q to quit): ");
+                Console.WriteLine("Enter product name - or q to quit: ");
                 input = Console.ReadLine();
                 if (input.ToLower() == "q")
                 {
@@ -40,7 +40,7 @@
                 //This while checks if input is a number. TryParse return false if not and user gets a new prompt to enter a number instead of negative number or chars
                 while (true)
                 {
-                    Console.WriteLine("Enter product price (or q to quit): ");
+                    Console.WriteLine("Enter product price - or q to quit: ");
                     input = Console.ReadLine();
                     if (input.ToLower() == "q")
                     {
@@ -62,7 +62,7 @@
                 cart.AddProduct(newProduct);
 
                 // Question for adding more products into the list (If yes it return to the top of While and iterates throgh again
-                Console.WriteLine("Do you want to add another product? (yes or no): ");
+                Console.WriteLine("Do you want to add another product? - yes or no: ");
                 string continueInput = Console.ReadLine().ToLower();
                 if (continueInput == "no")
                 {
@@ -77,7 +77,7 @@
             Console.WriteLine($"\nTotal Price: {cart.GetTotalPrice()} kr");
 
             // Question to add more products after displaying the List
-            Console.WriteLine("\nDo you want to add more products? (yes or no): ");
+            Console.WriteLine("\nDo you want to add more products? - yes or no: ");
             string addMoreProducts = Console.ReadLine().ToLower();
             if (addMoreProducts == "yes")
             {
